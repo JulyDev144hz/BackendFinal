@@ -22,7 +22,7 @@ const config = {
 
   // isProd:process.env.NODE_ENV === "production"
 
-  port: 8080,
+  port: 80,
   GITHUB_CLIENT_ID: "Iv1.f24bf717968854c2",
   GITHUB_SECRET_KEY: "SHA256:q9wkN8GAy8ZafjYc2JoNHGeiyaTNSArC/lY5e5XAvpg=",
   GITHUB_CLIENT_SECRET: "d6f38dda585c3f1352194269d292c476d66465dc",
@@ -39,7 +39,7 @@ const config = {
   nodemailer_user : "julianippolitopruebas@gmail.com",
   nodemailer_pass : "wazzgfrskjbldjzk",
 
-  dns_frontend:"http://localhost:8080",
+  dns_frontend:"http://localhost:80",
 
   isProd:"development" === "production"
 };
