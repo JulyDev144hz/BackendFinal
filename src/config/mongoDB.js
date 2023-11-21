@@ -5,11 +5,7 @@ let connection;
 (async () => {
   try {
     connection = await mongoose.connect(
-      mongo.atlas,
-      { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
-      () => {
-        console.log("Connected to MongoDB");
-      }
+      "mongodb+srv://admin:admin@cluster0.ni5ti26.mongodb.net/ecommerce?retryWrites=true&w=majority"
     );
     console.log("Conexión exitosa!");
   } catch (error) {
