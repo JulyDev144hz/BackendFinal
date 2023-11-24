@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 console.log("CARGANDO DOTENV")
-console.log("MONGODB:"+process.env.mongo_uri )
+console.log("MONGODB:"+process.env.MONGO_URI )
 console.log("PUERTO:"+process.env.PORT )
 const config = {
   port: process.env.PORT,
