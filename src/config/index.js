@@ -2,6 +2,7 @@ require("dotenv").config();
 
 console.log("CARGANDO DOTENV")
 console.log("MONGODB:"+process.env.mongo_uri )
+console.log("PUERTO:"+process.env.PORT )
 const config = {
   port: process.env.PORT,
   GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
@@ -47,7 +48,7 @@ const config = {
 };
 
 const mongo = {
-  atlas: process.env.mongo_uri,
+  atlas: process.env.MONGO_URI,
   // atlas: "mongodb+srv://admin:admin@cluster0.ni5ti26.mongodb.net/ecommerce?retryWrites=true&w=majority",
 };
 
