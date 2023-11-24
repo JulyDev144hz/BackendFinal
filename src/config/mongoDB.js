@@ -5,7 +5,7 @@ let connection;
 (async () => {
   try {
     connection = await mongoose.connect(
-      "mongodb+srv://admin:admin@cluster0.ni5ti26.mongodb.net/ecommerce?retryWrites=true&w=majority"
+      mongo.atlas
     );
     console.log("Conexión exitosa!");
   } catch (error) {
