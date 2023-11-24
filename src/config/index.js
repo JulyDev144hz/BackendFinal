@@ -1,5 +1,7 @@
 require("dotenv").config();
 
+console.log("CARGANDO DOTENV")
+console.log("MONGODB:"+process.env.mongo_uri )
 const config = {
   port: process.env.PORT,
   GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
