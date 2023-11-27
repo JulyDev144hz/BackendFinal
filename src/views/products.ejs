@@ -11,14 +11,14 @@
     <nav class="navBar">
       <h1>Products</h1>
       <ul class="options">
-        <li><a href="/chatView">Chat</a></li>
-        <li><a href="/products">Products</a></li>
         <% if ( user.role == 'ADMIN' || user.role == "PREMIUM") { %>
-        <li><a href="/products/create">CreateProduct</a></li>
+        <li><a href="/products/create">Crear Producto</a></li>
         <% }%>
+        <li><a href="/cart">Ver Carrito</a></li>
+        <li><a href="/chatView">Chat</a></li>
+        <li><a href="/products">Productos</a></li>
         <li><a href="/auth/dashboard">DashBoard</a></li>
         <li><a href="/auth/logout">LogOut</a></li>
-        <li><a href="/cart">Ver Carrito</a></li>
       </ul>
     </nav>
     <h2 style="text-align: center; padding-bottom: 10px">
